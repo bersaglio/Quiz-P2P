@@ -1,0 +1,103 @@
+*                    { margin: 0; padding: 0; }
+body                 { font: 16px Georgia, serif; }
+
+#page-wrap           { margin: 2% auto; color: white; }
+#page-wrap > .main   { border: 1px solid #999; padding: 1%; 
+	                   margin-bottom: 1px; color: black;}
+
+section > div        { padding: 20px; }
+header, nav, section { background: #eee; text-align: center;}
+
+nav span             { margin: 0px 10px 0px 0px;}
+
+#ErrorMsgs           { color: #f61; font-size: smaler}
+.right 				 {float: right;}
+
+
+
+h1 { color: ;
+     text-align: center;
+     font-style: oblique;
+     font-weight: 900;
+     font-family: trebuchet, georgia, serif;
+     padding: 0%;
+     font-size: 300%;
+     background-image: url(fondo.png);
+        }
+
+h2 { color: #8A0808;
+     text-align: center;
+     font-style: oblique;
+     font-weight: 900;
+     font-family: trebuchet, georgia, serif;
+     padding: 0%;
+     font-size: 300%;
+        }
+
+
+footer{
+    position: relative;
+    margin-bottom: 10px;
+    top: 30px;
+    height: 40px; 
+    padding:5px 5px;
+    background: #8A0808;
+    color: #fff;
+    clear: both;
+}
+
+
+#perfiles{
+  color: white;
+     text-align: center;
+     font-style: oblique;
+     font-weight: 900;
+     font-family: trebuchet, georgia, serif;
+     padding: 0%;
+     font-size: 200%;
+     background:#8A0808 ;
+     border-radius: 20px;
+   }
+
+  .perfil{
+    border-style: solid;
+    background:white;
+    border-radius:20px;
+    border:1px;
+    padding:10px;
+    border-color:#8A0808 ;
+  }
+  .perfil th {
+    border:1px;
+    padding:10px;
+  }
+  .perfil td {
+   
+    border:1px;
+    padding:10px;
+  }
+
+#videos{
+
+  color: white;
+     text-align: center;
+     font-style: oblique;
+     font-weight: 900;
+     font-family: trebuchet, georgia, serif;
+     padding: 0%;
+     font-size: 200%;
+     background:#8A0808 ;
+     border-radius: 20px;
+   }
+.fondo{
+    border-style:solid;
+  width: 100%;
+  height: 615px;
+}
+
+.fondo2{
+    border-style:solid;
+  width: 100%;
+  height: 300px;
+}
+
