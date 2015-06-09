@@ -7,3 +7,96 @@ h2 span, section h3, label.rem
 body             { font-size: xx-large; }
 input, button    { font-size: x-large; }
 footer           { font-size: large; }
+
+nav span { margin: 0px 10px 0px 0px;}
+#ErrorMsgs { color: #f61; font-size:smaler}
+
+.quiz_img { float: none; } 
+
+
+h1 { color: ;
+     text-align: center;
+     font-style: oblique;
+     font-weight: 900;
+     font-family: trebuchet, georgia, serif;
+     padding: 0%;
+     font-size: 300%;
+     background-image: url(fondo.png);
+        }
+
+h2 { color: #8A0808;
+     text-align: center;
+     font-style: oblique;
+     font-weight: 900;
+     font-family: trebuchet, georgia, serif;
+     padding: 0%;
+     font-size: 300%;
+        }
+
+
+footer{
+    position: relative;
+    margin-bottom: 10px;
+    top: 30px;
+    height: 40px; 
+    padding:5px 5px;
+    background: #eee;
+    color: #fff;
+    clear: both;
+}
+
+
+#perfiles{
+  color: white;
+     text-align: center;
+     font-style: oblique;
+     font-weight: 900;
+     font-family: trebuchet, georgia, serif;
+     padding: 0%;
+     font-size: 200%;
+     background:#0040FF ;
+     border-radius: 20px;
+   }
+
+  .perfil{
+    border-style: solid;
+    background:white;
+    border-radius:20px;
+    border:1px;
+    padding:10px;
+    border-color:#0040FF ;
+  }
+  .perfil th {
+    border:1px;
+    padding:10px;
+  }
+  .perfil td {
+   
+    border:1px;
+    padding:10px;
+  }
+
+#videos{
+
+  color: white;
+     text-align: center;
+     font-style: oblique;
+     font-weight: 900;
+     font-family: trebuchet, georgia, serif;
+     padding: 0%;
+     font-size: 200%;
+     background:#0040FF ;
+     border-radius: 20px;
+   }
+.fondo{
+    border-style:solid;
+  width: 100%;
+  height: 615px;
+}
+
+.fondo2{
+    border-style:solid;
+  width: 100%;
+  height: 300px;
+}
+

@@ -1,5 +1,48 @@
+<p> Buscador de preguntas</p><br>
+
+<form method="get" action="/quizes">
+
+  <input type="text" name="search" value="Introduzca pregunta"/>
+  <button type="submit">Buscar</button>
+</form>
+
   <table>
-  <% var i; for (i=0; i < quizes.length; i++) { %>        
-     <tr><td><a href="quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a></td></tr> 
-  <% } %>
-  </table>
+        <% var i; for (i=0; i<quizes.length; i++){ %>
+            <tr>
+                <td><a href="/quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a></td>
+                <%if(session.user){ 
+                        if (session.user.isAdmin || session.user.id === quizes[i].UserId) {%>
+                        <td><a href="/quizes/<%= quizes[i].id %>/edit"><button>editar</button></a></td>
+                        <td>
+                            <form method="post" action="/quizes/<%= quizes[i].id %>?_method=delete">
+                            <button type="submit" onClick="return confirm('Borrar: <%= quizes[i].pregunta %>');">
+                                borrar
+                            </button>
+                            </form>
+                        </td>
+                        <%} %>
+                        
+                        
+                        
+                        
+                        <% if(quizes[i].selected) {%>
+                            <td>
+                                <form method="post" action="/user/<%= session.user.id %>/favourites/<%= quizes[i].id %>?_method=delete">
+                                <input type="image" onClick="return confirm('Eliminar de favoritos: <%= quizes[i].pregunta %>');" src="http://img2.wikia.nocookie.net/__cb20130620210048/inciclopedia/images/1/18/Estrella_amarilla.png" style="width:auto; max-width:14px; heigth:auto;"></form>
+                            </td>
+                        <%} else {%>
+                              <td>
+                                <form method="post" action="/user/<%= session.user.id %>/favourites/<%= quizes[i].id %>?_method=put">
+                                    <input type="image" src="http://arenda-izh.ru/assets/images/4.png" style="width:auto; max-width:14px; heigth:auto;"></form>
+                            </td>  
+                        <%} %> 
+                    <% } %>
+                                  
+            </tr>
+        <% } %>
+        </table>
+            <p/>
+<%if(session.user){%>
+<a href="/quizes/new"><button type="button">Crear pregunta</button></a>
+<%}%>
+
