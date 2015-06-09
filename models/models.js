@@ -39,7 +39,17 @@ sequelize.sync().then(function() {
     if(count === 0) {   // la tabla se inicializa solo si está vacía
       Quiz.create({ pregunta: '¿Capital de Italia?',
       	            respuesta: 'Roma'
+      	         
       	         })
+      Quiz.create({ pregunta: '¿Qué instrumento musical tiene nombre y forma geométricos?',
+                    respuesta: 'Triángulo'
+                 });
+      Quiz.create({ pregunta: '¿Cuáles son las dos primeras palabras de la Biblia?',
+                    respuesta: 'Al principio'
+                 });
+      Quiz.create({ pregunta: '¿Quién escribió "El Diario de Ana Frank"?',
+                    respuesta: 'Ana Frank'
+                 });
       .then(function(){console.log('Base de datos inicializada')});
     };
   });
