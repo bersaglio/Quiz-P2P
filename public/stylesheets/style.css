@@ -49,6 +49,7 @@ footer{
     clear: both;
 }
 
+span.small           { font-size:12px; }
 
 #perfiles{
   color: white;

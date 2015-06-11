@@ -69,10 +69,10 @@ sequelize.sync().then(function(){
                 Quiz.count().then(function (count){
                     if (count === 0){
                         Quiz.bulkCreate(
-                           [ {pregunta: '¿Cual es la capital de Italia?',respuesta: 'Roma', UserId:2},
-                              {pregunta: '¿Qué número no puede ser representado con números romanos?',respuesta: '0', UserId:2},
-                              {pregunta: '¿Cómo se conoce vulgarmente el encéfalo?',respuesta:'Sesos', UserId:2},
-                              {pregunta: '¿Qué isla del Caribe tiene nombre de flor?',respuesta: 'Margarita', UserId:2},
+                           [ {pregunta: '¿Cual es la capital de Italia?',respuesta: 'Roma', UserId:2, tema: 'Humanidades'},
+                              {pregunta: '¿Qué número no puede ser representado con números romanos?',respuesta: '0', UserId:2, tema: 'Ciencia'},
+                              {pregunta: '¿Cómo se conoce vulgarmente el encéfalo?',respuesta:'Sesos', UserId:2, tema: 'Ciencia'},
+                              {pregunta: '¿Qué isla del Caribe tiene nombre de flor?',respuesta: 'Margarita', UserId:2, tema: 'Humanidades'},
                              ]
                         ).then(function(){console.log('Base de datos inicializada')});
                     };
